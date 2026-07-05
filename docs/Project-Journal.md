@@ -450,3 +450,112 @@ Begin implementing the Vishwam AI design system.
 - Color System
 - Typography
 - Reusable UI Components
+
+Day 1  ✅ Foundation & Git Setup
+Day 2  ✅ Application Architecture & Development Environment
+Day 3  ⏳ Design System & UI Foundation
+Day 4  ⏳ Landing Page Layout
+Day 5  ⏳ Authentication
+...
+# Day 3 – Design System & UI Foundation
+
+**Date:** 05 July 2026
+
+## Objective
+
+Establish the UI foundation for Vishwam AI by creating a scalable design system, configuring the global layout, and building the initial landing page architecture.
+
+---
+
+## Work Completed
+
+### Global Layout
+
+- Updated `app/layout.tsx`
+- Configured production-ready metadata
+- Applied Geist Sans and Geist Mono fonts
+- Added global Navbar and Footer layout
+- Introduced a shared `<main>` content area
+
+### Theme Foundation
+
+- Configured Tailwind CSS v4 theme tokens
+- Created brand color palette using CSS variables
+- Added typography tokens
+- Configured background and foreground theme colors
+- Enabled smooth scrolling
+- Added global CSS reset
+
+### UI Components
+
+Created reusable UI components:
+
+- Container
+- Section
+- Heading
+
+### Layout Components
+
+Created reusable layout components:
+
+- Navbar
+- Footer
+
+### Homepage
+
+Created the initial Hero section featuring:
+
+- Product introduction
+- Primary heading
+- Description
+- Call-to-action buttons
+- Responsive content container
+
+Updated `app/page.tsx` to render the Hero component.
+
+---
+
+## Architecture Decisions
+
+- Adopted component-based architecture.
+- Separated reusable UI components from layout components.
+- Used Tailwind CSS v4 design tokens.
+- Centralized brand colors using CSS variables.
+- Configured reusable global layout using the Next.js App Router.
+
+---
+
+## Folder Structure
+
+```
+components
+├── home
+│   └── Hero.tsx
+│
+├── layout
+│   ├── Navbar.tsx
+│   └── Footer.tsx
+│
+└── ui
+    ├── Container.tsx
+    ├── Heading.tsx
+    └── Section.tsx
+```
+
+---
+
+## Skills Learned
+
+- Next.js App Router layouts
+- Tailwind CSS v4 theme configuration
+- Design system fundamentals
+- Reusable React components
+- Component organization
+- Global layout architecture
+- Metadata configuration
+
+---
+
+## Outcome
+
+Successfully established the UI foundation of Vishwam AI with a scalable architecture, reusable components, and the first landing page section.
