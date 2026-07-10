@@ -1,15 +1,17 @@
-import Container from "../ui/Container";
-import Section from "../ui/Section";
-import Heading from "../ui/Heading";
+import Container from "@/components/ui/Container";
+import Section from "@/components/ui/Section";
+import Heading from "@/components/ui/Heading";
+import Button from "@/components/ui/Button";
+import Badge from "@/components/ui/Badge";
 
 export default function Hero() {
   return (
-    <Section>
+    <Section className="min-h-[calc(100vh-64px)] flex items-center">
       <Container>
-        <div className="max-w-3xl">
-          <p className="mb-4 text-primary font-semibold">
-            Welcome to Vishwam AI
-          </p>
+        <div className="max-w-4xl">
+          <Badge className="mb-4 font-semibold text-primary">
+            🚀 AI-Powered Personal Growth Platform
+          </Badge>
 
           <Heading>
             Build a Better You with the Power of AI
@@ -21,13 +23,11 @@ export default function Hero() {
           </p>
 
           <div className="mt-10 flex gap-4">
-            <button className="rounded-lg bg-primary px-6 py-3 font-medium text-white transition hover:opacity-90">
-              Get Started
-            </button>
+            <Button>Get Started</Button>
 
-            <button className="rounded-lg border border-border px-6 py-3 font-medium">
+            <Button variant="outline">
               Learn More
-            </button>
+            </Button>
           </div>
         </div>
       </Container>
